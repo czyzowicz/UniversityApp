@@ -1,4 +1,8 @@
-export const SearchBar = ({value, onChange}) => {
+interface SearchBarProps {
+    value: string;
+    onChange: (event: React.ChangeEvent<HTMLInputElement>) => void;
+}
+export const SearchBar = ({value, onChange}: SearchBarProps) => {
 
     return (
         <div>
